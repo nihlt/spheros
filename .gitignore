@@ -1,0 +1,21 @@
+# Локальний архів (сирі записи, старі скрипти й результати) і проміжні файли рендеру
+backup/
+build/
+
+# Відео ігноруємо скрізь, крім вхідних кліпів і демо в media/
+*.mp4
+!media/input/*.mp4
+!media/demo/*.mp4
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
