@@ -30,9 +30,9 @@
     <th>C · запис 124646</th>
   </tr>
   <tr>
-    <td><a href="media/demo/125707_leak_5x.mp4"><img src="media/preview/125707_leak.gif" alt="Демо A"></a></td>
-    <td><a href="media/demo/125707_from20s_leak_5x.mp4"><img src="media/preview/125707_from20s_leak.gif" alt="Демо B"></a></td>
-    <td><a href="media/demo/124646_leak_5x.mp4"><img src="media/preview/124646_leak.gif" alt="Демо C"></a></td>
+    <td><a href="media/demo/125707_leak_5x.mp4"><img src="media/preview/125707_leak.webp" alt="Демо A"></a></td>
+    <td><a href="media/demo/125707_from20s_leak_5x.mp4"><img src="media/preview/125707_from20s_leak.webp" alt="Демо B"></a></td>
+    <td><a href="media/demo/124646_leak_5x.mp4"><img src="media/preview/124646_leak.webp" alt="Демо C"></a></td>
   </tr>
   <tr>
     <td align="center">0:00–1:55 запису<br><a href="media/demo/125707_leak_5x.mp4">▶ mp4, 23 с</a></td>
@@ -130,7 +130,7 @@ spheros/
     │   ├── 125707_0000-0155.mp4     запис 125707, 0:00–1:55
     │   └── 124646_0627-0836.mp4     запис 124646, 6:27–8:36
     ├── demo/                        результати, прискорені в 5 разів
-    └── preview/                     GIF і кадри для цього README
+    └── preview/                     анімовані прев'ю і кадри для цього README
 ```
 
 | Демо | Вхідний кліп | Старт у кліпі | Вирізка (x, y) |
@@ -156,9 +156,6 @@ ffmpeg -ss 387 -i 20260526_124646.mp4 -t 129 -vf "fps=15,scale=1920:1080:flags=l
 </details>
 
 ## Обмеження
-
-> [!IMPORTANT]
-> Рамка **LEAK** показує, де в кадрі найстабільніша зміна. Це гіпотеза, а не підтверджений витік: чи там справді бульбашки, треба перевірити очима.
 
 - **Відблиски.** Відблиски на стійках і металі теж потрапляють на карту, і рамка іноді переходить на них.
 - **Рух у кадрі.** Руки й хвилі на воді вимикають рамку. Якщо хвилі не зупиняються, рамка може не з'явитися взагалі.
